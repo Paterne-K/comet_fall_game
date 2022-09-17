@@ -3,6 +3,10 @@ import math
 from game import Game
 pygame.init()
 
+# Define a clock
+clock = pygame.time.Clock()
+FPS = 90
+
 
 # Loading the window
 pygame.display.set_caption("Comet Fall Game")
@@ -57,7 +61,15 @@ while running:
 
             # Check if space is pressed
             if event.key == pygame.K_SPACE:
-                game.player.launch_projectile()
+                if game.is_playing:
+                    game.player.launch_projectile()
+
+                else:
+                    # Run the game
+                    game.start()
+
+                    # Play sound
+                    game.sound_manager.play("click")
 
         elif event.type == pygame.KEYUP:
             game.pressed[event.key] = False
@@ -68,3 +80,9 @@ while running:
 
                 # Run the game
                 game.start()
+
+                # Play sound
+                game.sound_manager.play("click")
+
+    # Fix the number of FPS of the clock
+    clock.tick(FPS)

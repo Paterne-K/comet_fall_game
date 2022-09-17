@@ -18,15 +18,15 @@ class Comet(pygame.sprite.Sprite):
     def remove(self):
          self.comet_event.all_comets.remove(self)
 
+         # play comet sound
+         self.comet_event.game.sound_manager.play("meteorite")
 
          # verify if the number of comets if 0
          if len(self.comet_event.all_comets) == 0:
              self.comet_event.add_reset_percent()
 
              # display monsters
-             self.comet_event.game.spawn_monster()
-             self.comet_event.game.spawn_monster()
-             self.comet_event.game.spawn_monster()
+             self.comet_event.game.start()
 
     def fall(self):
         self.rect.y += self.velocity

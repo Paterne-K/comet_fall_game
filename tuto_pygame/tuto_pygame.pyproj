@@ -22,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="animation.py" />
     <Compile Include="comet.py" />
     <Compile Include="comet_event.py" />
     <Compile Include="game.py" />
@@ -29,6 +30,7 @@
     <Compile Include="monster.py" />
     <Compile Include="player.py" />
     <Compile Include="projectile.py" />
+    <Compile Include="sounds.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
