@@ -1,0 +1,146 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7c306322-a141-4575-967f-7b67ebe1b2c7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>tuto_pygame</Name>
+    <RootNamespace>tuto_pygame</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="comet.py" />
+    <Compile Include="comet_event.py" />
+    <Compile Include="game.py" />
+    <Compile Include="main.py" />
+    <Compile Include="monster.py" />
+    <Compile Include="player.py" />
+    <Compile Include="projectile.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.9</Version>
+      <Description>env (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="assets\alien\" />
+    <Folder Include="assets\mummy\" />
+    <Folder Include="assets\player\" />
+    <Folder Include="assets\sounds\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\alien.png" />
+    <Content Include="assets\alien\alien1.png" />
+    <Content Include="assets\alien\alien10.png" />
+    <Content Include="assets\alien\alien11.png" />
+    <Content Include="assets\alien\alien12.png" />
+    <Content Include="assets\alien\alien13.png" />
+    <Content Include="assets\alien\alien14.png" />
+    <Content Include="assets\alien\alien15.png" />
+    <Content Include="assets\alien\alien16.png" />
+    <Content Include="assets\alien\alien17.png" />
+    <Content Include="assets\alien\alien18.png" />
+    <Content Include="assets\alien\alien19.png" />
+    <Content Include="assets\alien\alien2.png" />
+    <Content Include="assets\alien\alien20.png" />
+    <Content Include="assets\alien\alien21.png" />
+    <Content Include="assets\alien\alien22.png" />
+    <Content Include="assets\alien\alien23.png" />
+    <Content Include="assets\alien\alien24.png" />
+    <Content Include="assets\alien\alien3.png" />
+    <Content Include="assets\alien\alien4.png" />
+    <Content Include="assets\alien\alien5.png" />
+    <Content Include="assets\alien\alien6.png" />
+    <Content Include="assets\alien\alien7.png" />
+    <Content Include="assets\alien\alien8.png" />
+    <Content Include="assets\alien\alien9.png" />
+    <Content Include="assets\banner.png" />
+    <Content Include="assets\bg.jpg" />
+    <Content Include="assets\button.png" />
+    <Content Include="assets\comet.png" />
+    <Content Include="assets\mummy.png" />
+    <Content Include="assets\mummy\mummy1.png" />
+    <Content Include="assets\mummy\mummy10.png" />
+    <Content Include="assets\mummy\mummy11.png" />
+    <Content Include="assets\mummy\mummy12.png" />
+    <Content Include="assets\mummy\mummy13.png" />
+    <Content Include="assets\mummy\mummy14.png" />
+    <Content Include="assets\mummy\mummy15.png" />
+    <Content Include="assets\mummy\mummy16.png" />
+    <Content Include="assets\mummy\mummy17.png" />
+    <Content Include="assets\mummy\mummy18.png" />
+    <Content Include="assets\mummy\mummy19.png" />
+    <Content Include="assets\mummy\mummy2.png" />
+    <Content Include="assets\mummy\mummy20.png" />
+    <Content Include="assets\mummy\mummy21.png" />
+    <Content Include="assets\mummy\mummy22.png" />
+    <Content Include="assets\mummy\mummy23.png" />
+    <Content Include="assets\mummy\mummy24.png" />
+    <Content Include="assets\mummy\mummy3.png" />
+    <Content Include="assets\mummy\mummy4.png" />
+    <Content Include="assets\mummy\mummy5.png" />
+    <Content Include="assets\mummy\mummy6.png" />
+    <Content Include="assets\mummy\mummy7.png" />
+    <Content Include="assets\mummy\mummy8.png" />
+    <Content Include="assets\mummy\mummy9.png" />
+    <Content Include="assets\player.png" />
+    <Content Include="assets\player\player1.png" />
+    <Content Include="assets\player\player10.png" />
+    <Content Include="assets\player\player11.png" />
+    <Content Include="assets\player\player12.png" />
+    <Content Include="assets\player\player13.png" />
+    <Content Include="assets\player\player14.png" />
+    <Content Include="assets\player\player15.png" />
+    <Content Include="assets\player\player16.png" />
+    <Content Include="assets\player\player17.png" />
+    <Content Include="assets\player\player18.png" />
+    <Content Include="assets\player\player19.png" />
+    <Content Include="assets\player\player2.png" />
+    <Content Include="assets\player\player20.png" />
+    <Content Include="assets\player\player21.png" />
+    <Content Include="assets\player\player22.png" />
+    <Content Include="assets\player\player23.png" />
+    <Content Include="assets\player\player24.png" />
+    <Content Include="assets\player\player3.png" />
+    <Content Include="assets\player\player4.png" />
+    <Content Include="assets\player\player5.png" />
+    <Content Include="assets\player\player6.png" />
+    <Content Include="assets\player\player7.png" />
+    <Content Include="assets\player\player8.png" />
+    <Content Include="assets\player\player9.png" />
+    <Content Include="assets\projectile.png" />
+    <Content Include="assets\sounds\click.ogg" />
+    <Content Include="assets\sounds\game_over.ogg" />
+    <Content Include="assets\sounds\meteorite.ogg" />
+    <Content Include="assets\sounds\tir.ogg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
